@@ -1,15 +1,5 @@
 
-
-
-
-
-
-
-
-
 (() => {
-  
-  
   
   const fontLink = document.createElement('link');
   fontLink.href =
@@ -36,7 +26,6 @@
       });
     });
   }
-  
   enhanceHearts();
   const heartObserver = new MutationObserver(mutations => {
     mutations.forEach(m => {
@@ -57,7 +46,6 @@
     icons.forEach(icon => {
       if (icon.dataset.thumbEnhanced === 'true') return;
       icon.dataset.thumbEnhanced = 'true';
-      
       icon.style.transition = icon.style.transition
         ? `${icon.style.transition}, transform 0.3s ease`
         : 'transform 0.3s ease';
@@ -69,9 +57,7 @@
       });
     });
   }
-  
   enhanceThumbs();
-  
   const thumbObserver = new MutationObserver(mutations => {
     mutations.forEach(m => {
       m.addedNodes.forEach(node => {
@@ -209,9 +195,6 @@
   
   function fixRatePostButtons(root = document) {
     ['rate', 'post'].forEach(id => {
-      
-      
-      
       let inner;
       if (typeof root.getElementById === 'function') {
         inner = root.getElementById(id);
@@ -228,9 +211,7 @@
       }
     });
   }
-  
   fixRatePostButtons();
-  
   const ratePostObserver = new MutationObserver(mutations => {
     mutations.forEach(m => {
       m.addedNodes.forEach(node => {
