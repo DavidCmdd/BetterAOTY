@@ -1,0 +1,446 @@
+
+
+
+body {
+  font-family: 'Sora', sans-serif !important;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-base: #121212;
+    --bg-surface: #181818;
+    --bg-surface-alt: #1e1e1e;
+    --fg-primary: #e5e5e5;
+  }
+  
+  body {
+    background-color: var(--bg-base) !important;
+    color: var(--fg-primary) !important;
+  }
+  
+  section,
+  article,
+  aside,
+  .panel,
+  .rating-box,
+  .comment,
+  .review,
+  .sidebar,
+  .track-list,
+  .critic-reviews,
+  .friend-reviews {
+    background-color: var(--bg-surface) !important;
+    border-radius: 12px;
+    padding: 12px;
+  }
+  
+  .rating-box {
+    background-color: var(--bg-surface-alt) !important;
+  }
+  
+  button,
+  [class*='btn'],
+  input[type='submit'] {
+    background-color: #292929 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 8px 16px !important;
+    font-weight: 500 !important;
+    border-radius: 9999px !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  button:hover,
+  [class*='btn']:hover,
+  input[type='submit']:hover {
+    background-color: #383838 !important;
+  }
+
+  
+  nav button.toggleContent,
+  .navBlock.profile button.profileDropDown {
+    background-color: transparent !important;
+    color: inherit !important;
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  
+  header button[type='submit'],
+  #header button[type='submit'] {
+    background-color: transparent !important;
+    color: inherit !important;
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  
+  button.toggleContent {
+    background-color: transparent !important;
+    color: inherit !important;
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  
+  button[onclick*="getElementById('search')"] {
+    background-color: transparent !important;
+    color: inherit !important;
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  
+  .ratingBar,
+  .ratingBar * {
+    border-radius: 8px !important;
+    overflow: hidden;
+  }
+
+  
+  .fullWidth > div {
+    background-color: var(--bg-surface) !important;
+  }
+  
+  input,
+  textarea {
+    background-color: var(--bg-surface-alt) !important;
+    color: var(--fg-primary) !important;
+    border: 1px solid #333 !important;
+    border-radius: 8px !important;
+    padding: 6px 8px !important;
+  }
+  
+  img {
+    border-radius: 8px;
+  }
+  
+  div[class*='score'] {
+    border-radius: 8px;
+    padding: 2px 6px;
+    background-color: var(--bg-surface-alt) !important;
+  }
+  span[class*='score'],
+  a[class*='score'],
+  p[class*='score'] {
+    border-radius: 8px;
+    padding: 0 4px;
+    background-color: transparent !important;
+    display: inline-block;
+  }
+  
+  header,
+  #header {
+    background-color: var(--bg-surface) !important;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  
+  header a,
+  #header a,
+  nav a {
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+  
+  ul,
+  ol {
+    border-radius: 8px;
+    padding-left: 0;
+  }
+
+  
+
+  
+  .yourRatingContainer {
+    background-color: var(--bg-surface) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+  }
+
+  
+  section.fullWidth.newsworthyHome,
+  section.fullWidth.anticipatedHome,
+  section.fullWidth.bestHome {
+    background-color: var(--bg-surface) !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    margin-bottom: 24px;
+  }
+
+  
+  .ratingText {
+    display: inline-flex !important;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  
+  .albumReviewRow,
+  .albumReviewRow.first {
+    background-color: var(--bg-surface) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    margin-bottom: 16px;
+  }
+
+  
+  .track-list,
+  .user-lists,
+  .userLists,
+  aside .track-list {
+    background-color: var(--bg-surface) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    margin-top: 0 !important;
+  }
+
+  
+  .yourRatingContainer > button,
+  .yourRatingContainer > .btn,
+  .yourRatingContainer > [class*='button'] {
+    margin-right: 8px !important;
+  }
+
+  
+  section.fullWidth.newsworthyHome {
+    border-radius: 12px 12px 0 0 !important;
+    
+    width: 100% !important;
+  }
+  section.fullWidth.anticipatedHome,
+  section.fullWidth.bestHome {
+    border-radius: 0 !important;
+  }
+
+  
+  .flexContainer {
+    background-color: var(--bg-surface) !important;
+    border-radius: 12px !important;
+    padding: 0 !important;
+  }
+
+  
+  .fullWidth {
+    background-color: var(--bg-surface) !important;
+  }
+
+  
+  
+  body:not(.btx-compact) .albumBlock,
+  body:not(.btx-compact) .releaseBlock,
+  body:not(.btx-compact) .gridItem,
+  body:not(.btx-compact) .albumRow,
+  body:not(.btx-compact) .albumRowLarge {
+    margin-bottom: 20px !important;
+  }
+  section.fullWidth.newsworthyHome,
+  section.fullWidth.anticipatedHome,
+  section.fullWidth.bestHome {
+    margin-bottom: 32px !important;
+    padding: 20px !important;
+  }
+
+  
+  .albumTopBox.cover::before,
+  .albumTopBox.cover::after {
+    display: none !important;
+  }
+  .albumTopBox.cover {
+    background: none !important;
+  }
+  
+  .albumTopBox.cover img {
+    box-shadow: none !important;
+    filter: none !important;
+  }
+
+  
+  #nav.nav {
+    background-color: var(--bg-surface) !important;
+  }
+
+  
+  #rate.smallButton,
+  #post.smallButton {
+    background-color: #292929 !important;
+    color: #808080 !important;
+    border: none !important;
+    border-radius: 9999px !important;
+    padding: 8px 16px !important;
+    font-weight: 500 !important;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  #rate.smallButton:hover,
+  #post.smallButton:hover {
+    background-color: #383838 !important;
+    transform: translateY(-2px);
+    color: #ffffff !important;
+  }
+
+  
+  img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  button:hover,
+  [class*='btn']:hover,
+  .smallButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  
+  section:hover,
+  article:hover,
+  aside:hover,
+  .panel:hover,
+  .rating-box:hover,
+  .review:hover,
+  .comment:hover,
+  .sidebar:hover,
+  .track-list:hover,
+  .critic-reviews:hover,
+  .friend-reviews:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  
+  div[class*='score']:hover,
+  span[class*='score']:hover,
+  a[class*='score']:hover,
+  p[class*='score']:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+
+  
+
+  
+  .yourRatingContainer button,
+  .yourRatingContainer input[type='submit'] {
+    margin-right: 8px !important;
+    background-color: #292929 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 9999px !important;
+    padding: 8px 16px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  .yourRatingContainer button:last-of-type,
+  .yourRatingContainer input[type='submit']:last-of-type {
+    margin-right: 0 !important;
+  }
+
+  
+
+  
+  .albumTopBox,
+  .albumTopBox.cover,
+  .albumTopBox.info {
+    
+    background-color: var(--bg-surface) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+  }
+  
+  .albumTopBox.cover img {
+    border-radius: 8px !important;
+  }
+
+  
+  .rightContent {
+    background-color: var(--bg-surface) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+  }
+  .rightBox {
+    background-color: var(--bg-surface-alt) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    margin-bottom: 16px;
+  }
+  
+  #tracklist.rightBox {
+    
+    margin-top: 16px !important;
+  }
+
+  
+}
+
+
+@media (prefers-color-scheme: light) {
+  
+  section,
+  article,
+  aside,
+  .panel,
+  .rating-box,
+  .comment,
+  .review,
+  .sidebar,
+  .track-list,
+  .critic-reviews,
+  .friend-reviews {
+    border-radius: 12px;
+  }
+  button,
+  [class*='btn'],
+  input[type='submit'] {
+    border-radius: 9999px;
+  }
+  img {
+    border-radius: 8px;
+  }
+  div[class*='score'],
+  span[class*='score'],
+  a[class*='score'],
+  p[class*='score'] {
+    border-radius: 8px;
+    padding: 2px 6px;
+  }
+}
+
+
+@keyframes heartBounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.heart-bounce {
+  animation: heartBounce 0.3s ease forwards;
+}
+
+
+@keyframes thumbBounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+
+.thumb-bounce {
+  animation: thumbBounce 0.3s ease forwards;
+}

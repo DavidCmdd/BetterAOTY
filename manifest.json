@@ -1,0 +1,38 @@
+{
+  "content_scripts": [
+    {
+      "css": [
+        "styles.css",
+        "btx-features.css"
+      ],
+      "js": [
+        "content.js",
+        "btx-features.js"
+      ],
+      "matches": [
+        "https://www.albumoftheyear.org/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "Better AOTY enhances albumoftheyear with new features, interface changes, and more.",
+  "host_permissions": [
+    "https://www.albumoftheyear.org/*",
+    "https://api.allorigins.win/*"
+  ],
+  "manifest_version": 3,
+  "name": "Better AOTY",
+  "version": "1.1.7",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
