@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://betteraoty.com"><img src="https://github.com/DavidCmdd/BetterAOTY/blob/main/AOTY%20(1).png" alt="BetterAOTY" width="200"></a>
+  <a href="http://betteraoty.com"><img src="https://github.com/DavidCmdd/BetterAOTY/blob/58ca9ec22a1f70b0a8a566bfe93873950730f5a9/AOTY%20(1).png?raw=true" alt="BetterAOTY" width="200"></a>
   <br>
   Better AOTY
   <br>
